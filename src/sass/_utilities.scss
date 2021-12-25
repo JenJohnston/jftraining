@@ -1,0 +1,116 @@
+/*
+        Global Styling
+*/
+
+.disable-scrollbars {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none;  /* IE 10+ */
+        &::-webkit-scrollbar {
+          width: 0px;
+          background: transparent; /* Chrome/Safari/Webkit */
+        }
+      }
+body
+{
+    height: 100vh;
+    font-family: $content-font;
+    font-size: 100%;
+    line-height: 1.5;
+    color: $off-white;
+    background-color: #000;
+}
+
+/*
+        Form Styling
+*/
+
+        .form-container{
+                input[type=email]{
+                        padding: 0.55rem;
+                        border-radius: 0.65rem 0 0 0.65rem;
+                        border: none;
+                        width: 16rem;
+                }
+
+                input[type=email]:focus,
+                input[type=input]:focus {
+                        outline: none;
+                }
+
+                input[type=submit]{
+                        border-radius: 0 0.65rem 0.65rem 0;
+                        padding: 0.55rem 0.7rem 0.55rem 0.7rem;
+                        border: none;
+                        margin-left: -4px;
+                        background-color: $dk-blue;
+                        color: $off-white;
+                        font-weight: bold; 
+                        transition: all 0.3s ease-in-out;
+                }
+
+                input[type=submit]:hover{
+                        background-color: $purple;
+                }
+
+
+
+                
+        }
+
+/*
+        Buttons and Links
+*/
+
+.pagButton {
+        width: 2rem;
+        height: 2rem;
+        border-radius: 50%;
+        border: none;
+        padding: 0.15rem;
+        margin: 0 0.7rem;
+        opacity: 0.5;
+        background-color: $purple;
+    }
+
+.pagButton:hover {
+        border: solid 1px $off-white;
+}
+
+.active {
+        
+        padding: 1rem;
+        border: solid 1px $off-white;
+        
+        
+}
+
+    a {
+        text-decoration: none;
+        color: $off-white;
+        font-size: 1.25rem;
+        transition: all 0.3s ease-in-out;
+}
+
+a:hover {
+        color: $purple;
+}
+
+/*
+        Animations
+*/
+
+/*
+        Special Effects
+        
+*/
+
+.outline-text {
+        -webkit-text-stroke: 1px $lt-blue;
+          color: rgba(0,0,0,0);
+    }
+
+$text-shadow: $off-black 1px 1px;
+
+.shadow-text{
+        text-shadow: $text-shadow;
+}

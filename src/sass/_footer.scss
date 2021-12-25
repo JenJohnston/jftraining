@@ -1,0 +1,18 @@
+footer {
+    max-width: 50rem;
+    margin: 0 auto;
+    margin-top: 6rem;
+    margin-left: 8rem;
+    grid-row: 5;
+    grid-column: 4 / 7;
+    align-self: center;
+}
+
+.footer-content {
+    display: flex;
+    p,
+    a {
+        font-size: 1rem;
+        margin: 0 0.65rem;
+    }
+}

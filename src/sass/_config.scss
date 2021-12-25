@@ -1,0 +1,77 @@
+/*
+        Color Palette
+*/
+
+$off-white: #eff5f6;
+$purple: #8868ad;
+$lt-blue: #59adc6;
+$off-black: #1a1c25;
+$dk-blue: #46608d;
+
+ 
+/*
+        Font Styles
+*/
+
+$title-font: 'Montserrat', sans-serif;
+$content-font:  'Raleway', sans-serif;
+$large-font: 'Bowlby One', cursive;
+
+/*
+        Typography
+*/
+
+h1,
+h2,
+h3,
+h4 {
+        font-family: $title-font;
+}
+
+h1 {
+        font-size: 1.35rem;
+        text-transform: uppercase;
+}
+
+h2 {
+        font-size: 3.5rem;
+        text-align: center;  
+}
+
+// Overlay
+
+.ui-overlay {
+        z-index: 2;
+        position: absolute;
+        width: 100vw;
+        left: 0;
+        overflow: hidden;
+    }
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr auto 1fr 0.25fr auto;
+    grid-template-rows: auto 0.5fr 0.5fr auto 0.2fr;
+    z-index: 2;
+    overflow: hidden;
+    overflow-y: scroll;
+}
+
+.inline-grid {
+    grid-row: 1 / -1;
+    grid-column: 1 / -1;
+    display: inline-grid;
+    grid-template-columns: 1fr 1fr auto 1fr 1fr 1fr;
+    grid-template-rows: auto 0.5fr 0.5fr auto 0.2fr;
+    overflow: hidden;
+}
+
+// Web GL
+
+.webgl {
+    position: fixed;
+    top: 0;
+    left: 0;
+    outline: none;
+    overflow: hidden;
+}
